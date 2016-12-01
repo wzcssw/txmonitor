@@ -41,9 +41,8 @@ app.io.use(function*(next) {
 // router for socket event 
 app.io.route('new_message', function*() {
     // we tell the client to execute 'new message' 
-    var message = this.data[0].msg;
-    console.log(message)
-    this.broadcast.emit('new_message', message);
+    var message = this.data[0].message;
+    this.broadcast.emit('new_message', { message: message });
 });
 
 // 启动
