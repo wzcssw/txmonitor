@@ -89,6 +89,7 @@ app.config(['$stateProvider', '$urlRouterProvider', '$ocLazyLoadProvider', funct
                             'scripts/controllers/main.js',
                             'scripts/directives/notifications/notifications.js',
                             'scripts/directives/chat/chat.js',
+                            'scripts/directives/dashboard/stats/stats.js'
                         ]
                     })
                 }
